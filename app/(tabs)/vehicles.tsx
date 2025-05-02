@@ -32,66 +32,171 @@ export default function HomeScreen() {
           style={styles.inputsearch}
         />
 
-        <View style={{ padding: 20, flexDirection: "row", gap: 40 }}>
-          <TouchableOpacity style={styles.boxes}>
-            <View
-              style={{
-                flexDirection: "column",
-                justifyContent: "center",
-                // position: "relative",
-                // gap: 10
-              }}
-            >
-              <Image
-                style={styles.carimage}
-                source={require("../../assets/images/car1.png")}
-              />
-              <View style={{ marginTop: 90 }}>
-                <Text style={styles.cardText1}>Standard</Text>
-                <Text style={styles.cardText1}>56</Text>
+        <ScrollView horizontal={true}>
+          <View style={{ padding: 20, flexDirection: "row", gap: 40 }}>
+            <TouchableOpacity style={styles.boxes}>
+              <View
+                style={{
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  // position: "relative",
+                  // gap: 10
+                }}
+              >
+                <Image
+                  style={styles.carimage}
+                  source={require("../../assets/images/car1.png")}
+                />
+                <View style={{ marginTop: 90 }}>
+                  <Text style={styles.cardText1}>Standard</Text>
+                  <Text style={styles.cardText1}>56</Text>
+                </View>
               </View>
-            </View>
-          </TouchableOpacity>
+            </TouchableOpacity>
 
-          <TouchableOpacity style={styles.box2}>
-            <View
-              style={{
-                flexDirection: "column",
-                justifyContent: "center",
-                // position: "relative",
-                // gap: 10
-              }}
-            >
-              <Image
-                style={styles.carimage}
-                source={require("../../assets/images/car2.png")}
-              />
-              <View style={{ marginTop: 90 }}>
-                <Text style={styles.cardText2}>Prestige</Text>
-                <Text style={styles.cardText2}>22</Text>
+            <TouchableOpacity style={styles.box2}>
+              <View
+                style={{
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  // position: "relative",
+                  // gap: 10
+                }}
+              >
+                <Image
+                  style={styles.carimage}
+                  source={require("../../assets/images/car2.png")}
+                />
+                <View style={{ marginTop: 90 }}>
+                  <Text style={styles.cardText2}>Prestige</Text>
+                  <Text style={styles.cardText2}>22</Text>
+                </View>
               </View>
-            </View>
-          </TouchableOpacity>
+            </TouchableOpacity>
 
-          <TouchableOpacity style={styles.box2}>
+            <TouchableOpacity style={styles.box2}>
+              <View
+                style={{
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  // position: "relative",
+                  // gap: 10
+                }}
+              >
+                <Image
+                  style={styles.carImage}
+                  source={require("../../assets/images/car3.png")}
+                />
+                <View style={{ marginTop: 90 }}>
+                  <Text style={styles.cardText2}>SUV</Text>
+                  <Text style={styles.cardText2}>34</Text>
+                </View>
+              </View>
+            </TouchableOpacity>
+          </View>
+        </ScrollView>
+
+        <Text
+          style={{
+            color: "#212121",
+            fontSize: 14,
+            fontWeight: 400,
+            paddingBottom: 20,
+          }}
+        >
+          Available vehicles
+        </Text>
+
+        <View style={{flexDirection: 'column', gap: 30}}>
+          <View style={styles.vehiclebox}>
             <View
-              style={{
-                flexDirection: "column",
-                justifyContent: "center",
-                // position: "relative",
-                // gap: 10
-              }}
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
-              <Image
-                style={styles.carimage}
-                source={require("../../assets/images/car2.png")}
-              />
-              <View style={{ marginTop: 90 }}>
-                <Text style={styles.cardText2}>Prestige</Text>
-                <Text style={styles.cardText2}>22</Text>
+              <View style={{ gap: 7 }}>
+                <Text
+                  style={{ color: "#212121", fontSize: 34, fontWeight: 800 }}
+                >
+                  Toyota
+                </Text>
+                <Text
+                  style={{ color: "#7D8EA3", fontSize: 14, fontWeight: "400" }}
+                >
+                  Yaris iA
+                </Text>
+                <Text
+                  style={{ color: "#212121", fontSize: 14, fontWeight: "400" }}
+                >
+                  Engine
+                </Text>
+              </View>
+              <View style={{ gap: 7 }}>
+                <Text
+                  style={{ color: "#304FFE", fontSize: 34, fontWeight: 300 }}
+                >
+                  $350
+                </Text>
+                <Text
+                  style={{ color: "#7D8EA3", fontSize: 14, fontWeight: "400" }}
+                >
+                  / month
+                </Text>
+                <Text
+                  style={{ color: "#212121", fontSize: 14, fontWeight: "400" }}
+                >
+                  4-Cyl 1.5 Liter
+                </Text>
               </View>
             </View>
-          </TouchableOpacity>
+            <Image
+              style={{ width: 280, height: 190, marginVertical: 20 }}
+              source={require("../../assets/images/car4.png")}
+            />
+          </View>
+
+          <View style={styles.vehiclebox}>
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <View style={{ gap: 7 }}>
+                <Text
+                  style={{ color: "#212121", fontSize: 34, fontWeight: 800 }}
+                >
+                  Hyundai
+                </Text>
+                <Text
+                  style={{ color: "#7D8EA3", fontSize: 14, fontWeight: "400" }}
+                >
+                  i20 
+                </Text>
+                <Text
+                  style={{ color: "#212121", fontSize: 14, fontWeight: "400" }}
+                >
+                  Engine
+                </Text>
+              </View>
+              <View style={{ gap: 7 }}>
+                <Text
+                  style={{ color: "#304FFE", fontSize: 34, fontWeight: 300 }}
+                >
+                  $250
+                </Text>
+                <Text
+                  style={{ color: "#7D8EA3", fontSize: 14, fontWeight: "400" }}
+                >
+                  / month
+                </Text>
+                <Text
+                  style={{ color: "#212121", fontSize: 14, fontWeight: "400" }}
+                >
+                  6-Cyl 1.0 Liter
+                </Text>
+              </View>
+            </View>
+            <Image
+              style={{ width: 290, height: 190, marginVertical: 20 }}
+              source={require("../../assets/images/car3.png")}
+            />
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -162,5 +267,22 @@ const styles = StyleSheet.create({
     zIndex: 1,
     right: 5,
     top: 0,
+  },
+
+  carImage: {
+    width: 130,
+    height: 80,
+    position: "absolute",
+    zIndex: 1,
+    right: 20,
+    top: 0,
+  },
+
+  vehiclebox: {
+    backgroundColor: "#fff",
+    borderRadius: 35,
+    // width: 354,
+    height: 340,
+    padding: 20,
   },
 });
